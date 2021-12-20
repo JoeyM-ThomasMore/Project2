@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <title>Homepagina</title>   
+    
+    
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-md fixed-top navbar-custom navbar-dark">
+        <div class="container-fluid">
+
+            <a href="#" class="navbar-brand">
+                <img src="images/favicon-32x32.png" alt="favicon">
+                Joey Mertens</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigatiemenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navigatiemenu">
+                <ul class="navbar-nav ms-auto text-center">
+                    <li class="nav-item"> 
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item"> 
+                        <a href="curriculumvitae.html" class="nav-link">CV</a>
+                    </li>
+                    <li class="nav-item"> <a href="interesses.html" class="nav-link">Hobby's</a></li>
+                    <li class="nav-item"> <a href="contact.html" class="nav-link">contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container py-4">
+        <header>
+            <h1>Contact pagina</h1>
+        </header>
+        <section>
+            <div class="card">
+                <div class="card-body left">
+                    <h5 class="card-title">Je kan mij via deze middelen contactere of door het contact formulier in te vullen.</h5>
+                    <p class="card-text">E-mail: Mertesn.Joey@gmail.com</p>
+                </div>
+            </div>
+        </section>
+
+        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+      
+          <div class="mb-3">
+            <label class="form-label" for="name">Naam</label>
+            <input class="form-control" id="name" type="text" placeholder="Name" data-sb-validations="required" />
+            <div class="invalid-feedback" data-sb-feedback="name:required">Name is required.</div>
+          </div>
+      
+          <div class="mb-3">
+            <label class="form-label" for="emailAddress">E-mail</label>
+            <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required, email" />
+            <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
+            <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
+          </div>
+      
+          <div class="mb-3">
+            <label class="form-label" for="message">Bericht</label>
+            <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;" data-sb-validations="required"></textarea>
+            <div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div>
+          </div>
+      
+          <div class="d-none" id="submitSuccessMessage">
+            <div class="text-center mb-3">Form submission successful!</div>
+          </div>
+      
+          <div class="d-none" id="submitErrorMessage">
+            <div class="text-center text-danger mb-3">Error sending message!</div>
+          </div>
+      
+          <div class="d-grid">
+            <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button>
+          </div>
+      
+        </form>
+      
+      </div>
+    
+    <footer class="footer mt-auto">
+        <div class="container">
+            <div class="row">
+                <div class="col d-flex flex-row text-white">
+                    <p>&copy;2021 Joey Mertens</p>
+                </div>
+                <div class="col d-flex flex-row-reverse">
+                    <a href="https://be.linkedin.com/" target="_blank"><i class="bi bi-linkedin text-white"></i></a>
+                    <a href="https://nl-nl.facebook.com/" target="_blank"><i class="bi bi-facebook text-white"></i></a>
+                    <a href="https://twitter.com/?lang=nl" target="_blank"><i class="bi bi-twitter text-white"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram text-white"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
